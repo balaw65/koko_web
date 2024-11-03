@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  active: false
+  startingdate: MyString
+  favoritegenre: MyString
+  interests: MyString
+  currentlevel: 1
+  currentlesson: 1
+
+two:
+  email: MyString
+  active: false
+  startingdate: MyString
+  favoritegenre: MyString
+  interests: MyString
+  currentlevel: 1
+  currentlesson: 1

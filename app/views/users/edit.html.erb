@@ -1,0 +1,43 @@
+<% provide(:title, "Edit profile") %>
+
+<% if @user.usertype == "guest" %>
+  <h1 class="center">Guest Profile</h1>
+<% elsif @user.usertype == "student" %>
+   <h1 class="center">Student Profile</h1>
+<% elsif @user.usertype == "admin" %>
+   <h1 class="center">Administrator Profile</h1>
+<% else %>
+   <h1 class="center">Guest Profile</h1>
+<% end %>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %><br>
+
+      <% if current_user.admin? %>
+         <%= f.label :usertype, "Current user type: " + @user.usertype %><br>
+         <%= f.select :usertype, ["admin","guest","student","other"]%><br class="dbl_space">
+         <% if current_student?(@user.email) %>
+            <p><b>Is it an activated student? <%= @student.active %></b></p>
+            <p><b>Desired starting date: <%= @student.startingdate %></b></p>
+            <p><b>Favorite genre: <%= @student.favoritegenre %></b></p>
+            <p><b>Interests: <%= @student.interests %></b></p>
+            <p><b>At level: <%= @student.currentlevel %></b></p>
+            <p><b>At lesson: <%= @student.currentlesson %></b></p>
+         <% end %>
+      <% else %>
+         <%= f.label :password %><br>
+         <%= f.password_field :password, class: 'form-control' %>
+         <%= f.label :password_confirmation, "Confirmation" %>
+         <%= f.password_field :password_confirmation, class: 'form-control' %><br>
+      <% end %>
+      
+
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

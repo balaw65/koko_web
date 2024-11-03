@@ -1,0 +1,397 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:      border-box;
+  -webkit-box-sizing:   border-box;
+  box-sizing:           border-box;
+}
+
+body {
+   padding-top: 60px;
+}
+section {
+   overflow: auto;
+}
+textarea {
+   resize: vertical;
+}
+.center {
+  margin-top: 10px;
+  text-align: center;
+}
+.center h1 {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.row {
+  margin-left: 100px;
+}
+.col {
+  margin-top: 30px;
+}
+.dbl_space {
+  margin-bottom: 30px;
+}
+.ml-1 {
+  padding-left: 50px;
+}
+.error_description {
+  background-color:yellow;
+  color:red;
+}
+td.highlighted {
+  background-color:yellow;
+  font-weight:bold;
+}
+td.old {
+  background-color:gray;
+}
+td.disabled-date {
+  background-color:gray;
+}
+td.disabled {
+  background-color:gray;
+}
+p.instructions {
+  margin-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.0em;
+  font-weight:normal;
+}
+aside {
+  section.user_info {
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 2.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px
+    }
+  }
+}
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right:10px;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+p.guitarParts{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1.5em;
+  font-style:italic;
+  font-weight:bold;
+}
+a#handLink {
+  font-family:'Playfair Display';
+  font-size:1.5em;
+  font-style:italic;
+  font-weight:bold;
+}
+table.fullguitar {
+   background-image:image-url('LevelOne/fullguitar.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.soundboard {
+   background-image: image-url('LevelOne/soundboard_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.bridge {
+   background-image: image-url('LevelOne/bridge_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+
+table.saddle {
+   background-image: image-url('LevelOne/saddle_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.pickguard {
+   background-image: image-url('LevelOne/pickguard_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.fretboard {
+   background-image: image-url('LevelOne/fretboard_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.nut {
+   background-image: image-url('LevelOne/nut_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.tuningpegs {
+   background-image: image-url('LevelOne/tuningpegs_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+table.frets {
+   background-image: image-url('LevelOne/frets_wa.png');
+   background-repeat:no-repeat;
+   margin-top:20px;
+   margin-left:20px;
+}
+td.guitar {
+   min-width:155px;
+   height:75px;
+}
+.is_wrong {
+   width: 113px;
+   border: 3px solid red;
+}
+.is_correct {
+   width: 111px;
+   border: 2px solid green;
+}
+
+.is_not_graded {
+   border: 1px solid blue;
+}
+.iswrong {
+   border: 2px solid red;
+   background-color:red;
+   display:flex;
+}
+.iscorrect {
+   border: 1px solid green;
+   background-color:green;
+   display:flex;
+}
+.isnotgraded {
+   display:flex;
+}
+
+
+
+.is_wrong_finger {
+   width: 33px;
+   border: 3px solid red;
+}
+.is_correct_finger {
+   width: 32px;
+   border: 2px solid green;
+}
+.is_not_graded_finger {
+   width: 32px;
+   border: 1px solid blue;
+}
+
+
+
+td#r1c1 {
+   vertical-align:top;
+}
+td#r1c2 {
+   vertical-align:bottom;
+}
+td#r2c5 {
+   vertical-align:bottom;
+}
+
+td#r2c3 {
+   vertical-align:top;
+}
+td#r3c4 {
+   vertical-align:top;
+}
+td#r4c4 {
+   vertical-align:bottom;
+}
+td#r4c5 {
+   vertical-align:bottom;
+}
+td#r5c1 {
+   vertical-align:bottom;
+}
+td#r5c3 {
+   vertical-align:bottom;
+}
+table.bothhands {
+   background-image:image-url('LevelOne/both_hands.png');
+   background-repeat:no-repeat;
+   margin-left:20px;
+   //border: 2px solid blue;
+}
+td.hand {
+   min-width:85px;
+   height:85px;
+   //border: 1px solid gray;
+}
+td#hr1c2 {
+   vertical-align:center;
+   padding-left:45px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr1c3 {
+   vertical-align:center;
+   padding-left:45px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr2c1 {
+   vertical-align:top;
+   padding-left:45px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr2c4 {
+   vertical-align:top;
+   padding-left:45px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr3c5 {
+   vertical-align:bottom;
+   padding-left:25px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+td#hr1c7 {
+   vertical-align:center;
+   padding-left:50px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr1c8 {
+   vertical-align:center;
+   padding-left:50px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+
+td#hr2c6 {
+   vertical-align:top;
+   padding-left:50px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+td#hr2c9 {
+   vertical-align:top;
+   padding-left:45px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+
+td#hr3c6 {
+   vertical-align:bottom;
+   padding-left:1px;
+   font-family: 'Playfair Display';
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+
+
+
+div.ll1 {
+  height:100px;
+  p#l1l1Info {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight:normal;
+  }
+}
+td#hands_button {
+    padding-left: 30px;
+}
+div.ll2 {
+  height:250px;
+  p#musicFont {
+    font-family:Noto;
+    font-size: 1.5em;
+    font-weight:normal;
+    color:#333333;
+
+  }
+ 
+  p#l1l1s2Info {
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight:normal;
+  }
+  div#l1l1s2InfoBlue {
+    margin-top: 15px;
+    padding-left:100px; 
+    padding-right: 20px;
+ 
+    color:#3333ff;
+
+    font-family:Noto;
+    font-size: 1.3em;
+    font-weight:normal;
+  }
+  a:link.lesson2QuizLink {
+    padding-left:50px; 
+ 
+    color:#3333ff;
+
+    font-family:Noto;
+    font-size: 1.3em;
+    font-weight:normal;
+  }
+
+}
