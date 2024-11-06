@@ -6,3 +6,5 @@ from application.html.erb removed from line 22:
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
+    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
+
