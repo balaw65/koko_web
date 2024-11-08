@@ -1,17 +1,12 @@
-<h1>Students#edit</h1>
-<p>Find me in app/views/students/edit.html.erb</p>
-
-
-<%= form_for(@editing_student) do |f| %>
-
-
+<h1>Students#status</h1>
+<p>Find me in app/views/students/status.html.erb</p>
 <table>
    <tr>
      <td class="student_edit">
         <p><b>Students email:</b></p>
      </td>
      <td>
-         <p><%= @editing_student.email %></p>
+         <p><%= editing_student.email %></p>
      </td>
    </tr>
    <tr>
@@ -19,7 +14,7 @@
         <p><b>Students starting date:</b></p>
      </td>
      <td>
-         <p><%= @editing_student.startingdate %></p>
+         <p><%= editing_student.startingdate %></p>
      </td>
    </tr>
    <tr>
@@ -27,7 +22,7 @@
         <p><b>Students favorite genre:</b></p>
      </td>
      <td>
-         <p><%= @editing_student.favoritegenre %></p>
+         <p><%= editing_student.favoritegenre %></p>
      </td>
    </tr>
    <tr>
@@ -35,7 +30,7 @@
         <p><b>Students interests:</b></p>
      </td>
      <td>
-         <p><%= @editing_student.interests %></p>
+         <p><%= editing_student.interests %></p>
      </td>
    </tr>
    <tr>
@@ -43,7 +38,7 @@
         <p><b>Students current level:</b></p>
      </td>
      <td>
-        <%= f.text_field:currentlevel,size:1,maxlength:1,value:@editing_student.currentlevel, :style=>"width:28px" %>
+        <%= editing_student.currentlevel %>
      </td>
    </tr>
    <tr>
@@ -51,11 +46,8 @@
         <p><b>Students current lesson:</b></p>
      </td>
      <td>
-        <%= f.text_field:currentlesson,size:1,maxlength:1,value:@editing_student.currentlesson, :style=>"width:28px" %>
+        <%= editing_student.currentlesson %>
      </td>
    </tr>
 </table>
 
-<%= f.submit "Save changes", class: "btn btn-primary" %>
-<% end %>
- 

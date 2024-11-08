@@ -88,6 +88,7 @@ class L1L1QuestionsController < ApplicationController
      if p == 100.0
         flash[:success] = "WOW!  Very good you got a 100%"
      end
+     render 'show'
  
 
   end

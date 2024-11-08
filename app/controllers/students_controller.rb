@@ -30,15 +30,38 @@ class StudentsController < ApplicationController
      logger.debug "GOT HERE AT STUDENTS SHOW URL"
   end
 
+  def status
+     logger.debug "GOT HERE AT STUDENTS STATUS URL"
+  end
+
   def update
+
      logger.debug "GOT HERE AT STUDENTS UPDATE URL"
-     logger.debug "student is at level:  #{current_student.currentlevel}"
-     redirectToLesson(current_student.email, current_student.currentlevel, current_student.currentlesson)
+     logger.debug "*******************************************Student update profile called"
+ 
+     if current_user.admin?
+        student = Student.find(params[:id])
+        logger.debug "User is an admin"
+        logger.debug "Student to update:  #{student.email}"
+        if student
+           if student.update(student_params)
+              flash[:success] = "Student Updated"
+              redirect_to students_status_path
+           else
+              flash[:danger] = "Problem updateding student"
+              render 'edit'
+           end
+        end
+     else
+        logger.debug "student is at level:  #{current_student.currentlevel}, lesson:  #{current_student.currentlesson}"
+        redirectToLesson(current_student.email, current_student.currentlevel, current_student.currentlesson)
+     end
 
   end
 
 
   def create
+     logger.debug "GOT HERE AT STUDENTS CREATE"
      @student       = Student.new(student_params)
      @student.email = current_user.email
 
@@ -47,6 +70,9 @@ class StudentsController < ApplicationController
         render 'show'
      else
         flash.now[:danger] = "Student profile error!! OOPS"
+        logger.debug "STUDENT EMAIL:  #{@student.email}"
+ 
+
         render 'new'
      end
  
@@ -54,7 +80,23 @@ class StudentsController < ApplicationController
 
   def edit
      logger.debug "GOT HERE AT STUDENTS EDIT URL"
+     
+     if current_user.admin?
+        logger.debug "User is an admin"
+        logger.debug "****Current user:  #{current_user.email}"
+        logger.debug "****Editing student:  #{editing_student.email}"
+     else
+        logger.debug "student is at level:  #{current_student.currentlevel}"
+        redirectToLesson(current_student.email, current_student.currentlevel, current_student.currentlesson)
+     end
+
+
   end
+
+  def update_profile
+     logger.debug " Student update profile called"
+  end
+
 
   def destroy
      logger.debug " Student destroy in controller called"
@@ -80,8 +122,14 @@ private
              when 1
                 redirect_to l1l1_url  # see config/routes.rb
              when 2
+                redirect_to l1l2_url  # see config/routes.rb
              when 3
+                redirect_to l1l3_url  # see config/routes.rb
              when 4
+                redirect_to l1l4_url  # see config/routes.rb
+             when 5
+                redirect_to l1l5_url  # see config/routes.rb
+ 
           end
      end
   end

@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   include StudentsHelper
 
   @@dayTimeAndZone = ["","",""]
+  @@student = nil
 
   # Make it global:
   # Pending Students:

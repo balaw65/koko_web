@@ -53,9 +53,16 @@ Rails.application.routes.draw do
 
 
   get 'students/new'
+  get 'students/show'
   get 'students/create'
   get 'students/edit'
   get 'students/destroy'
+  get 'students/update'
+  get 'students/status'
+  post 'students/update_profile'
+
+
+  get 'students/update'
   get 'password_resets/new'
   get 'password_resets/edit'
   get 'sessions/new'

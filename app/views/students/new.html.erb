@@ -28,9 +28,6 @@ lesson day of the week: <div id="lessonday"><%= @day %></div>
        <%= f.label :startingdate, "Desired start date: " %><br>
        <%= f.text_field :startingdate, id: "startingdate", class: "mydatepicker", disabled:true %><br><br>
 
-       <%= f.text_field :startingdate, id: "enabletest", class: "enabletest", disabled:false %><br><br>
-
-
        <%= f.submit "Submit", class: "btn btn-primary", id: "submitButton" %><br><br><br>
     <% end %> 
   </div>

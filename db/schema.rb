@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_10_08_223327) do
+ActiveRecord::Schema[7.1].define(version: 2024_11_07_141452) do
   create_table "l1_l1_questions", force: :cascade do |t|
     t.string "email"
     t.string "sound_board"
@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_08_223327) do
     t.string "finger_p"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "sound_hole"
   end
 
   create_table "l1_l2_questions", force: :cascade do |t|
@@ -125,6 +126,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_08_223327) do
     t.string "activation_digest"
     t.boolean "activated"
     t.datetime "activated_at"
+    t.integer "currentlevel"
   end
 
 end

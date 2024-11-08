@@ -79,7 +79,9 @@ class UsersController < ApplicationController
       if s
          if s.update(active:true)
             flash[:success] = "Profile Updated"
-            redirect_to @user
+            set_editing_email(s.email)
+            @@student = s
+            redirect_to students_edit_path
          else
             flash[:danger] = "Problem updating student"
             render 'edit'
@@ -102,7 +104,11 @@ class UsersController < ApplicationController
 
     # find student in Student table and delete:
     u = User.find(params[:id])
-    Student.find_by(email: u.email).destroy
+    s = Student.find_by(email:u.email)
+    if (s != nil)
+       s.destroy
+    end
+
 
     # find user in User table and delete:
     User.find(params[:id]).destroy
@@ -113,7 +119,7 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.require(:user).permit(:name, :email, :timezone, :lessontime, :lessonday, :usertype, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :timezone, :lessontime, :lessonday, :usertype, :password, :password_confirmation, :currentlevel)
   end
 
 

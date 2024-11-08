@@ -1,8 +1,13 @@
 module StudentsHelper
-   @student
+
+   def set_editing_email(email)
+     @@editing_email = email
+   end
    def current_student
-      logger.debug ">>>>>>>>  email: #{current_user.email}"
       @current_student = Student.find_by(email: current_user.email)
+   end
+   def editing_student
+      @editing_student = Student.find_by(email:@@editing_email)
    end
    def current_student?(email)
      begin
