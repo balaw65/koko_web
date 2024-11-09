@@ -321,7 +321,7 @@
   }
 
   function testNewButtonFunction() { 
-     console.log("NEW BUTTON PRESSED");
+     console.log("TEST NEW BUTTON PRESSED");
   }
 
 
