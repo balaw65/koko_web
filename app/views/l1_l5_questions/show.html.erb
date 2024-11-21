@@ -1,11 +1,334 @@
-<br><h1>L1 Lesson Five: Guitaring, Scales, YUK!!</h1>
-<p id='l1l5instuctions' class='instructions'>We are going to work on what is called pentonic scales.  As oppose to a<br>
-                        diatonic scale, a pentonic scale includes five notes per octave in a <br>
+<div id='l1l5Header'><br><h1>L1 Lesson Five: Guitaring, Scales, YUK!!</h1></div>
+  <p id='l1l5instructions' class='instructions'>We are going to work on what are called pentonic scales. Penatonic<br>
+                        scales are helpful when learning Blues and Raggae. As oppose to a<br>
+                        diatonic scale, a penatonic scale includes five notes per octave in a <br>
                         given key, where a diatonic scale includes all seven notes.<br><br>
                         For now, we skip two notes.  Later we re-introduce these two notes as<br>
                         'happy' notes.<br><br></p>
-  <div class='mybutton'>
-     <button id='nextl1l5' class='l1l5 btn btn-primary'>NEXT</button>
+
+
+     <button id='nextl1l5' class='button_l1l5'>NEXT</button>
+
+
+  <div class='background_1' id='backgroundId' style='display:none;'>
   </div>
+  <div class='state_1' id='stateId' style='display:none;'>
+  </div>
+
+
+  <!-- NOTE:  This is notation for Pattern II Left Side:  -->
+  <div class='pattern_II_LeftNotation' id='pattern_II_LeftNotation_1' style='display:none;'>
+     <table>
+        <tr>
+           <td>e</td>
+        </tr>
+        <tr>
+           <td>B</td>
+        </tr>
+         <tr>
+           <td>G</td>
+        </tr>
+        <tr>
+           <td>D</td>
+        </tr>
+         <tr>
+           <td>A</td>
+        </tr>
+        <tr>
+           <td>E</td>
+        </tr>
+ 
+     </table>
+  </div>
+ 
+
+  <!-- NOTE:  This is Pattern II for G Pentonic Scale Guitar Diagram 1:  -->
+  <div class='diagramGmajorPattern_II' id='pattern_II_G_Major' style='display:none;'>
+     <table>
+        <tr>
+           <td class='fret0'></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr>
+           <td class='fret0'></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr>
+           <td class='fret0'></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr>
+           <td class='fret0'></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr>
+           <td class='fret0'></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+
+     </table>
+     <div class='g3'>
+        <%= image_tag('white2.png', id:'g3PatternIIWhite') %>
+        <%= image_tag('yellow2.png', id:'g3PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='a4'>
+        <%= image_tag('black4.png', id:'a4PatternIIBlack') %>
+        <%= image_tag('yellow4.png', id:'a4PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='b4'>
+        <%= image_tag('black1.png', id:'b4PatternIIBlack') %>
+        <%= image_tag('yellow1.png', id:'b4PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='d4'>
+        <%= image_tag('black4.png', id:'d4PatternIIBlack') %>
+        <%= image_tag('yellow4.png', id:'d4PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='e4'>
+        <%= image_tag('black1.png', id:'e4PatternIIBlack') %>
+        <%= image_tag('yellow1.png', id:'e4PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='g4'>
+        <%= image_tag('white4.png', id:'g4PatternIIWhite') %>
+        <%= image_tag('yellow4.png', id:'g4PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='a5'>
+        <%= image_tag('black1.png', id:'a5PatternIIBlack') %>
+        <%= image_tag('yellow1.png', id:'a5PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='b5'>
+        <%= image_tag('black3.png', id:'b5PatternIIBlack') %>
+        <%= image_tag('yellow3.png', id:'b5PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='d5'>
+        <%= image_tag('black2.png', id:'d5PatternIIBlack') %>
+        <%= image_tag('yellow2.png', id:'d5PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='e5'>
+        <%= image_tag('black4.png', id:'e5PatternIIBlack') %>
+        <%= image_tag('yellow4.png', id:'e5PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='g5'>
+        <%= image_tag('white2.png', id:'g5PatternIIWhite') %>
+        <%= image_tag('yellow2.png', id:'g5PatternIIYellow', style:'display:none;') %>
+     </div>
+     <div class='a6'>
+        <%= image_tag('black4.png', id:'a6PatternIIBlack') %>
+        <%= image_tag('yellow4.png', id:'a6PatternIIYellow', style:'display:none;') %>
+     </div>
+ 
+  </div>
+  <!-- NOTE:  This is notation for Pattern II Bottom Side:  -->
+  <div class='pattern_II_BottomNotation' id='pattern_II_BottomNotation_1' style='display:none;'>
+     <table>
+        <tr>
+           <td id='bottomColumn1'>fret 1 &#x2ba5</td>
+           <td id='bottomColumn2'>2 &#x2ba5</td>
+           <td id='bottomColumn3'>3 &#x2ba5</td>
+           <td id='bottomColumn4'>4 &#x2ba5</td>
+           <td id='bottomColumn5'>5 &#x2ba5</td>
+        </tr>
+        <tr>
+           <td colspan=5></td>
+        </tr>
+     </table>
+  </div>
+ 
+
+
+
+
+   <div class='trebleKeyOfG' id='pentonicScaleKeyOfG' style='display:none;'>
+     <div class='staffI'>
+        <table class='trebleClefStaffPrefix'>
+          <tr>
+            <td>&#x1d100</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d106</td>
+          </tr>
+        </table>
+     </div>
+     <div class='trebleClefI'>
+        <p>&#x1d11e</p>
+     </div>
+     <div class='sharpI'>
+        <p>&#x266f</p>
+     </div>
+     <div class='timeSigI'>
+        <p><b>4</b></p>
+        <p><b>4</b></p>
+     </div>
+   </div>
+   <div class='trebleMeasure1' id='pentonicScaleKeyOfGMeasure1' style='display:none;'>
+        <table>
+          <tr>
+            <td>&#x1d100</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d11a</td>
+            <td>&#x1d100</td>
+          </tr>
+        </table>
+        <div class='staff1_4_bottom_2'>
+           <p>&#x1d117</p>
+        </div>
+        <div class='g3'>
+           <p><b>&#x1d15f</b></p>
+        </div>
+        <div class='staff2_4_bottom_2'>
+           <p>&#x1d117</p>
+        </div>
+        <div class='a3'>
+           <p><b>&#x1d15f</b></p>
+        </div>
+         <div class='staff3_4_bottom_1'>
+           <p>&#x1d116</p>
+        </div>
+        <div class='b3'>
+           <p><b>&#x1d15f</b></p>
+        </div>
+        <div class='d4'>
+           <p><b>&#x1d15f</b></p>
+        </div>
+ 
+   </div>
+ 
+
+   <div class='trebleMeasure2' id='pentonicScaleKeyOfGMeasure2' style='display:none;'>
+      <table>
+        <tr>
+          <td>&#x1d100</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d100</td>
+        </tr>
+      </table>
+      <div class='notes1_4'>
+         <div class='e4'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='g4'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='a4'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='b4'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+ 
+      </div>
+   </div>
+   <div class='trebleMeasure3' id='pentonicScaleKeyOfGMeasure3' style='display:none;'>
+      <table>
+        <tr>
+          <td>&#x1d100</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d100</td>
+        </tr>
+      </table>
+      <div class='notes1_4'>
+         <div class='d5'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='e5'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='g5'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+         <div class='e5_4'>
+            <p><b>&#x1d15f</b></p>
+         </div>
+ 
+      </div>
+   </div>
+   <div class='trebleMeasure4' id='pentonicScaleKeyOfGMeasure4' style='display:none;'>
+      <div class='staffI_line2'>
+        <table>
+           <tr>
+             <td>&#x1d100</td>
+             <td>&#x1d11a</td>
+             <td>&#x1d11a</td>
+             <td>&#x1d11a</td>
+             <td>&#x1d11a</td>
+             <td>&#x1d11a</td>
+           </tr>
+         </table>
+      </div>
+      <div class='trebleClefI_line2'>
+        <p>&#x1d11e</p>
+      </div>
+      <div class='sharpI_line2'>
+        <p>&#x266f</p>
+      </div>
+      <div class='d5'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+      <div class='b4'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+      <div class='a4'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+      <div class='g4'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+   </div>
+   <div class='trebleMeasure5' id='pentonicScaleKeyOfGMeasure5' style='display:none;'>
+      <table>
+        <tr>
+          <td>&#x1d100</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+          <td>&#x1d11a</td>
+        </tr>
+      </table>
+      <div class='e4'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+      <div class='d4'>
+         <p><b>&#x1d15f</b></p>
+      </div>
+      <div class='staff2_4_bottom_1'>
+         <p>&#x1d116</p>
+      </div>
+      <div class='b3'>
+         <p>&#x1d15f</p>
+      </div>
+      <div class='staff4_4_bottom_2'>
+         <p>&#x1d117</p>
+      </div>
+      <div class='a3'>
+         <p>&#x1d15f</p>
+      </div>
+      <div class='repeat'>
+         <p>&#x1d107</p>
+      </div>
+ 
+   </div>
+ 
 
 

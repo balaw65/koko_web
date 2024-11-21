@@ -68,7 +68,7 @@ table#indentTable {
 }
 
 table.guitarStaff {
-  //border: 1px solid black;
+  border: 1px solid black;
   tr.staffRow {
     td#headerInfo {
        font-family:Noto;
@@ -78,6 +78,7 @@ table.guitarStaff {
        text-align:right;
        font-family:Noto;
        font-size:6.0em;
+       border: 1px solid black;
     }
     td#measureStart {
        text-align:center;

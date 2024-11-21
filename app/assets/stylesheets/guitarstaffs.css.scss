@@ -1,0 +1,270 @@
+
+
+div.pattern_II_LeftNotation {
+   position:absolute;
+   top:180px;
+   left:20px;
+ 
+   table {
+      tr {
+            td {
+              width:50px;
+              height:44px;
+              font-family:Noto;
+              font-size:1.5em;
+              text-align:right;
+            }
+         }
+   }
+ 
+}
+div.pattern_II_BottomNotation {
+   position:absolute;
+   top:440px;
+   left:90px;
+ 
+   table {
+      tr {
+            td {
+              width:150px;
+              height:44px;
+              font-family:Noto;
+              text-align:right;
+              font-size:1.7em;
+            }
+         }
+   }
+ 
+}
+
+
+
+
+div.diagramGmajorPattern_II {
+   position:absolute;
+   top:200px;
+   left:80px;
+   table {
+      tr {
+            td {
+              width:150px;
+              height:44px;
+              border: 3px solid black;
+            }
+            td.fret0 {
+              width:150px;
+              height:44px;
+              border-left: 9px solid black;
+            }
+ 
+         }
+   }
+   div.g3 {
+      position:relative;
+      z-index:9;
+      top:-21px;
+      left:370px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.a4 {
+      position:relative;
+      z-index:9;
+      top:-60px;
+      left:650px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.b4 {
+      position:relative;
+      z-index:9;
+      top:-140px;
+      left:220px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.d4 {
+      position:relative;
+      z-index:9;
+      top:-175px;
+      left:650px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.e4 {
+      position:relative;
+      z-index:9;
+      top:-258px;
+      left:220px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.g4 {
+      position:relative;
+      z-index:9;
+      top:-298px;
+      left:650px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.a5 {
+      position:relative;
+      z-index:9;
+      top:-380px;
+      left:220px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.b5 {
+      position:relative;
+      z-index:9;
+      top:-417px;
+      left:510px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.d5 {
+      position:relative;
+      z-index:9;
+      top:-500px;
+      left:370px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.e5 {
+      position:relative;
+      z-index:9;
+      top:-537px;
+      left:645px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.g5 {
+      position:relative;
+      z-index:9;
+      top:-620px;
+      left:370px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+   div.a6 {
+      position:relative;
+      z-index:9;
+      top:-655px;
+      left:645px;
+      img {
+         width:5%;
+         height:auto;
+      }
+   }
+ 
+}
+ 
+
+div.diagramGmajorPatternII {
+   position:absolute;
+   top:800px;
+   left:20px;
+   table {
+      tr {
+            td {
+
+              font-family:Noto;
+              font-size:12.0em;
+            }
+         }
+   }
+   div.leftEnd {
+      position:relative;
+      z-index:0;
+      top:-253px;
+      left:0px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.firstFret {
+      position:relative;
+      z-index:0;
+      top:-553px;
+      left:200px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.secondFret {
+      position:relative;
+      z-index:0;
+      top:-853px;
+      left:400px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.thirdFret {
+      position:relative;
+      z-index:0;
+      top:-1153px;
+      left:600px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.forthFret {
+      position:relative;
+      z-index:0;
+      top:-1453px;
+      left:800px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.fifthFret {
+      position:relative;
+      z-index:0;
+      top:-1753px;
+      left:1000px;
+      font-family:Noto;
+      font-size:15.0em;
+   }
+   div.g3 {
+      position:relative;
+      z-index:9;
+      top:-1855px;
+      left:470px;
+      img {
+         width:64px;
+         height:auto;
+      }
+   }
+   div.a4 {
+      position:relative;
+      z-index:9;
+      top:-1910px;
+      left:860px;
+   }
+ 
+   div.stringsI {
+      position:relative;
+      z-index:0;
+      top:0px;
+      left:0px;
+   }
+}

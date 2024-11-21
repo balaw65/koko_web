@@ -326,9 +326,9 @@
 
 
   /* Simple button example: */
-     $('.mybutton').click(function(){
-            testNewButtonFunction();
-      });
+//   $('.mybutton').click(function(){
+//          testNewButtonFunction();
+//    });
 
 
   $(document).ready(function(){
@@ -430,7 +430,7 @@
         default:
            l1l1s2Info.innerHTML = "Wait and see what these strange letters designated mean...";
            //setInterval(iterateFingers, 50); //1000);
-           iterate1 = setInterval(iterateFingers, 50); //1000);
+           iterate1 = setInterval(iterateFingers, 500);
            console.log("GOT HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 //   GET, but does not work this way
 //         fetch("l1l1_hand",{method:"GET"});

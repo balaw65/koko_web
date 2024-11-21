@@ -1,0 +1,167 @@
+
+button.button_l1l5 {
+   position:absolute;
+ 
+   top:500px;
+   left:400px;
+}
+
+div.pentonicClefStaffPrefixDivision {
+   position:relative;
+   z-index:0;
+   top:0px;
+   left:0px;
+}
+div.pentonicClefStaffDivision {
+   position:relative;
+   z-index:1;
+   top:-126px;
+   left:150px;
+}
+div.trebleClefDivision {
+   position:relative;
+   z-index:1;
+   top:-254px;
+   left:70px;
+   p {
+     font-family:Noto;
+     font-size:6.3em;
+   }
+}
+div.fSharpDivision {
+   position:relative;
+   z-index:1;
+   top:-400px;
+   left:120px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+}
+div.timeSigNumeratorDivision {
+   position:relative;
+   z-index:2;
+   top:-445px;
+   left:160px;
+   p {
+     font-family:serif;
+     font-size:3.0em;
+     line-height:22px;
+   }
+}
+div.g3NoteStaff {
+   position:relative;
+   z-index:3;
+   top:-470px;
+   left:260px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+     font-stretch: semi-condensed;
+   }
+}
+div.g3Note {
+   position:relative;
+   z-index:4;
+   top:-557px;
+   left:270px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+div.a3NoteStaff {
+   position:relative;
+   z-index:3;
+   top:-651px;
+   left:330px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+     font-stretch: semi-condensed;
+   }
+}
+div.a3Note {
+   position:relative;
+   z-index:4;
+   top:-745px;
+   left:340px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+div.b3NoteStaff {
+   position:relative;
+   z-index:3;
+   top:-831px;
+   left:390px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+     font-stretch: semi-condensed;
+   }
+}
+div.b3Note {
+   position:relative;
+   z-index:4;
+   top:-930px;
+   left:400px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+div.d4Note {
+   position:relative;
+   z-index:4;
+   top:-1040px;
+   left:450px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+div.e4Note {
+   position:relative;
+   z-index:4;
+   top:-1137px;
+   left:530px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+div.g4Note {
+   position:relative;
+   z-index:4;
+   top:-1244px;
+   left:590px;
+   p {
+     font-family:Noto;
+     font-size:4.0em;
+   }
+
+}
+
+div.tryAbsolute {
+   position:absolute;
+   top:570px;
+   left:20px;
+   border: 1px solid red;
+}
+
+table.pentonicClefStaff {
+   margin-left:60px;
+   tr {
+      td {
+        font-family:Noto;
+        font-size:6.3em;
+      }
+   }
+}
