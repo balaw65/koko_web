@@ -14,6 +14,28 @@
   </div>
   <div class='state_1' id='stateId' style='display:none;'>
   </div>
+  <div class='tempoSelect' id='tempoSelectId' style='display:none;'>
+     TEMPO:
+     <select name='Tempo' size='1' id='tempoComboId'>
+        <option value='45'>45</option>
+        <option value='50'>50</option>
+        <option value='55'>55</option>
+        <option value='60'>60</option>
+        <option value='65'>65</option>
+        <option value='70'>70</option>
+        <option value='75'>75</option>
+        <option value='80'>80</option>
+        <option value='85'>85</option>
+        <option value='95'>95</option>
+        <option value='100'>100</option>
+        <option value='105'>105</option>
+        <option value='110'>110</option>
+        <option value='115'>115</option>
+        <option value='120'>120</option>
+        <option value='125'>125</option>
+     </select>
+  </div>
+
 
 
   <!-- NOTE:  This is notation for Pattern II Left Side:  -->
@@ -188,22 +210,22 @@
         <div class='staff1_4_bottom_2'>
            <p>&#x1d117</p>
         </div>
-        <div class='g3'>
+        <div class='g3' id='m1b1_g3'>
            <p><b>&#x1d15f</b></p>
         </div>
         <div class='staff2_4_bottom_2'>
            <p>&#x1d117</p>
         </div>
-        <div class='a3'>
+        <div class='a3' id='m1b2_a3'>
            <p><b>&#x1d15f</b></p>
         </div>
          <div class='staff3_4_bottom_1'>
            <p>&#x1d116</p>
         </div>
-        <div class='b3'>
+        <div class='b3' id='m1b3_b3'>
            <p><b>&#x1d15f</b></p>
         </div>
-        <div class='d4'>
+        <div class='d4' id='m1b4_d4'>
            <p><b>&#x1d15f</b></p>
         </div>
  
@@ -222,19 +244,18 @@
         </tr>
       </table>
       <div class='notes1_4'>
-         <div class='e4'>
+         <div class='e4' id='m2b1_e4'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='g4'>
+         <div class='g4' id='m2b2_g4'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='a4'>
+         <div class='a4' id='m2b3_a4'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='b4'>
+         <div class='b4' id='m2b4_b4'>
             <p><b>&#x1d15f</b></p>
          </div>
- 
       </div>
    </div>
    <div class='trebleMeasure3' id='pentonicScaleKeyOfGMeasure3' style='display:none;'>
@@ -249,16 +270,16 @@
         </tr>
       </table>
       <div class='notes1_4'>
-         <div class='d5'>
+         <div class='d5' id='m3b1_d5'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='e5'>
+         <div class='e5' id='m3b2_e5'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='g5'>
+         <div class='g5' id='m3b3_g5'>
             <p><b>&#x1d15f</b></p>
          </div>
-         <div class='e5_4'>
+         <div class='e5_4' id='m3b4_e5'>
             <p><b>&#x1d15f</b></p>
          </div>
  
@@ -283,16 +304,16 @@
       <div class='sharpI_line2'>
         <p>&#x266f</p>
       </div>
-      <div class='d5'>
+      <div class='d5' id='m4b1_d5'>
          <p><b>&#x1d15f</b></p>
       </div>
-      <div class='b4'>
+      <div class='b4' id='m4b2_b4'>
          <p><b>&#x1d15f</b></p>
       </div>
-      <div class='a4'>
+      <div class='a4' id='m4b3_a4'>
          <p><b>&#x1d15f</b></p>
       </div>
-      <div class='g4'>
+      <div class='g4' id='m4b4_g4'>
          <p><b>&#x1d15f</b></p>
       </div>
    </div>
@@ -306,22 +327,22 @@
           <td>&#x1d11a</td>
         </tr>
       </table>
-      <div class='e4'>
+      <div class='e4' id='m5b1_e4'>
          <p><b>&#x1d15f</b></p>
       </div>
-      <div class='d4'>
+      <div class='d4' id='m5b2_d4'>
          <p><b>&#x1d15f</b></p>
       </div>
       <div class='staff2_4_bottom_1'>
          <p>&#x1d116</p>
       </div>
-      <div class='b3'>
+      <div class='b3' id='m5b3_b3'>
          <p>&#x1d15f</p>
       </div>
       <div class='staff4_4_bottom_2'>
          <p>&#x1d117</p>
       </div>
-      <div class='a3'>
+      <div class='a3' id='m5b4_a3'>
          <p>&#x1d15f</p>
       </div>
       <div class='repeat'>
@@ -329,6 +350,51 @@
       </div>
  
    </div>
- 
+   <!-- NOTE:  This is notation for treble staff bottom side line 1:  -->
+  <div class='trebleStaffUnderStaffNotation1' id='trebleStaffUnderStaffNotation1ID' style='display:none;'>
+     <table>
+        <tr>
+           <td id='n1m1'>G</td>
+           <td id='n2m1'>A</td>
+           <td id='n3m1'>B</td>
+           <td id='n4m1'>D</td>
+           <td id='n1m2'>E</td>
+           <td id='n2m2'>G</td>
+           <td id='n3m2'>A</td>
+           <td id='n4m2'>B</td>
+           <td class='between2and3'></td>
+           <td id='n1m3'>D</td>
+           <td id='n2m3'>E</td>
+           <td id='n3m3'>G</td>
+           <td id='n4m3'>E</td>
+        </tr>
+        <tr>
+           <td colspan=13></td>
+        </tr>
+     </table>
+  </div>
+  <!-- NOTE:  This is notation for treble staff bottom side line 2:  -->
+  <div class='trebleStaffUnderStaffNotation2' id='trebleStaffUnderStaffNotation2ID' style='display:none;'>
+     <table>
+        <tr>
+           <td id='n1m4'>D</td>
+           <td id='n2m4'>B</td>
+           <td id='n3m4'>A</td>
+           <td id='n4m4'>G</td>
+           <td id='n1m5'>E</td>
+           <td id='n2m5'>D</td>
+           <td id='n3m5'>B</td>
+           <td id='n4m5'>A</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr class='row2'>
+           <td colspan=13 id='line2BottomTrebleStaff'></td>
+        </tr>
+     </table>
+  </div>
 
 

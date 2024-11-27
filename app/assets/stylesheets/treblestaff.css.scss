@@ -25,33 +25,6 @@ div.background_2 {
    background-image:image-url('SkippingCandFsharpBackground.png');
    background-repeat:no-repeat;
 }
-div.background_3 {
-   position:absolute;
-   z-index:0;
- 
-   top:200px;
-   left:20px;
-   width:1200px;
-   height:425px;
-   //border: 1px solid red;
-   background-image:image-url('StaffNoteNames.png');
-   background-repeat:no-repeat;
-}
-div.background_4 {
-   position:absolute;
-   z-index:0;
- 
-   top:200px;
-   left:20px;
-   width:1200px;
-   height:425px;
-   //border: 1px solid red;
-   background-image:image-url('StaffGuitarStrokes.png');
-   background-repeat:no-repeat;
-}
-
-
-
 
 table.trebleClefStaffPrefix {
    tr {
@@ -61,7 +34,83 @@ table.trebleClefStaffPrefix {
       }
    }
 }
-
+div.trebleStaffUnderStaffNotation1 {
+   position:absolute;
+   top:340px;
+   left:200px;
+   table {
+      tr {
+            td {
+              width:65px;
+              height:30px;
+              color:blue;
+              font-family:Noto;
+              text-align:center;
+              font-size:1.5em;
+              font-weight:bold;
+              //border: 1px solid blue;
+ 
+            }
+            td.between2and3 {
+              width:25px;
+              height:30px;
+              color:blue;
+              font-family:Noto;
+              text-align:center;
+              font-size:1.5em;
+              font-weight:bold;
+              //border: 1px solid blue;
+ 
+            }
+ 
+         }
+   }
+ 
+}
+div.trebleStaffUnderStaffNotation2 {
+   position:absolute;
+   top:540px;
+   left:130px;
+   table {
+      tr {
+            td {
+              width:60px;
+              height:40px;
+              color:blue;
+              font-family:Noto;
+              text-align:center;
+              font-size:1.5em;
+              font-weight:bold;
+              //border: 1px solid blue;
+ 
+            }
+            td.between4and5 {
+              width:60px;
+              height:40px;
+              color:black;
+              font-family:Noto;
+              text-align:center;
+              font-size:1.5em;
+              font-weight:bold;
+              //border: 1px solid blue;
+ 
+            }
+ 
+         }
+       tr.row2
+       {
+            td {
+              color:black;
+              font-family:Noto;
+              text-align:left;
+              vertical-align:bottom;
+              font-size:1.5em;
+              font-weight:bold;
+            }
+       }
+   }
+ 
+}
 div.trebleKeyOfG {
    position:absolute;
    top:700px;
@@ -194,7 +243,7 @@ div.trebleMeasure2 {
    div.notes1_4 {
       position:relative;
       top:-100px;
-      left:10px;
+      left:20px;
       div.e4 {
          position:relative;
          top:11px;
@@ -205,7 +254,7 @@ div.trebleMeasure2 {
       }
       div.g4 {
          position:relative;
-         left:70px;
+         left:65px;
          top:-100px;
          p {
            font-family:Noto;
@@ -223,7 +272,7 @@ div.trebleMeasure2 {
       }
       div.b4 {
          position:relative;
-         left:190px;
+         left:195px;
          top:-310px;
          p {
            font-family:Noto;
@@ -243,7 +292,7 @@ div.trebleMeasure3 {
    div.notes1_4 {
       position:relative;
       top:-100px;
-      left:10px;
+      left:20px;
       div.d5 {
          position:relative;
          top:-7px;
@@ -257,7 +306,7 @@ div.trebleMeasure3 {
       div.e5 {
          position:relative;
          top:-112px;
-         left:-190px;
+         left:-195px;
          p {
            font-family:Noto;
            font-size:4.3em;
@@ -266,7 +315,7 @@ div.trebleMeasure3 {
       }
       div.g5 {
          position:relative;
-         left:-140px;
+         left:-130px;
          top:-222px;
          p {
            font-family:Noto;
@@ -276,7 +325,7 @@ div.trebleMeasure3 {
       }
       div.e5_4 {
          position:relative;
-         left:-90px;
+         left:-65px;
          top:-304px;
          p {
            font-family:Noto;
@@ -332,7 +381,7 @@ div.trebleMeasure4 {
    }
    div.b4 {
       position:relative;
-      left:155px;
+      left:175px;
       top:-435px;
       p {
         font-family:Noto;
@@ -341,7 +390,7 @@ div.trebleMeasure4 {
    }
    div.a4 {
       position:relative;
-      left:210px;
+      left:240px;
       top:-522px;
       p {
         font-family:Noto;
@@ -350,7 +399,7 @@ div.trebleMeasure4 {
    }
    div.g4 {
       position:relative;
-      left:270px;
+      left:305px;
       top:-611px;
       p {
         font-family:Noto;
@@ -377,7 +426,7 @@ div.trebleMeasure5 {
    }
    div.d4 {
       position:relative;
-      left:80px;
+      left:85px;
       top:-179px;
       p {
         font-family:Noto;
@@ -386,7 +435,7 @@ div.trebleMeasure5 {
    }
    div.staff2_4_bottom_1 {
       position:relative;
-      left:130px;
+      left:140px;
       top:-246px;
 
       p {
@@ -397,7 +446,7 @@ div.trebleMeasure5 {
    }
    div.b3 {
       position:relative;
-      left:140px;
+      left:145px;
       top:-350px;
       p {
         font-family:Noto;
@@ -434,7 +483,5 @@ div.trebleMeasure5 {
         font-size:6.3em;
       }
    }
- 
-
 } 
 

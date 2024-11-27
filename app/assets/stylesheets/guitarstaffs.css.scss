@@ -1,5 +1,17 @@
-
-
+div.tempoSelect {
+   z-index:5;
+   position:absolute;
+   top:500px;
+   left:520px;
+   font-family:Noto;
+   font-size:2.0em;
+ 
+   select#tempoComboId {
+      overflow-y:auto;
+      overflow-x:hidden;
+      width:300px;
+   }
+}
 div.pattern_II_LeftNotation {
    position:absolute;
    top:180px;
