@@ -1,3 +1,5 @@
+<body onload="initializeStaff();">
+
 <div id='l1l5Header'><br><h1>L1 Lesson Five: Guitaring, Scales, YUK!!</h1></div>
   <p id='l1l5instructions' class='instructions'>We are going to work on what are called pentonic scales. Penatonic<br>
                         scales are helpful when learning Blues and Raggae. As oppose to a<br>
@@ -11,6 +13,7 @@
 
 
   <div class='background_1' id='backgroundId' style='display:none;'>
+ 
   </div>
   <div class='state_1' id='stateId' style='display:none;'>
   </div>
@@ -338,11 +341,7 @@
       </div>
       <div class='b3' id='m5b3_b3'>
          <p>&#x1d15f</p>
-      </div>
-      <div class='staff4_4_bottom_2'>
-         <p>&#x1d117</p>
-      </div>
-      <div class='a3' id='m5b4_a3'>
+      </div> <div class='staff4_4_bottom_2'> <p>&#x1d117</p> </div> <div class='a3' id='m5b4_a3'>
          <p>&#x1d15f</p>
       </div>
       <div class='repeat'>
@@ -396,5 +395,96 @@
         </tr>
      </table>
   </div>
+
+  <div class='trebleStaffClef' id='trebleStaffClefID'>
+     <table id='staffLinesID'>
+       <tr>
+         <td>&#x1d100</td>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='trebleClefI' id='trebleClefIId'>
+        <p>&#x1d11e</p>
+     </div>
+  </div>
+
+
+  <!--
+  <div id='injectKeySignature'>
+  </div>
+  -->
+  <div class='trebleSharpsAndFlats' id='fsharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='fsharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='csharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='csharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='gsharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='gsharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='dsharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='dsharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='asharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='asharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='esharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='esharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+  <div class='trebleSharpsAndFlats' id='bsharp' style='display:none;'>
+     <table id='keyLinesID'>
+       <tr>
+         <td>&#x1d11a</td>
+       </tr>
+     </table>
+     <div class='sharps' id='bsharpCharacter'>
+        <p>&#x266f</p>
+     </div>
+  </div>
+
+<h2><%= link_to "Click here for new", l1l5new_path %></h2>
+</body>
 
 

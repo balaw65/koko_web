@@ -5,4 +5,5 @@
 //= require bootstrap-datepicker
 //= require studentscripts
 //= require treblestaff
+//= require treblestaffgeneral
 //= require level1

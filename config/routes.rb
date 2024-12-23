@@ -38,6 +38,8 @@ Rails.application.routes.draw do
   get 'l1l4' => 'l1_l4_questions#show'
  
   get 'l1l5' => 'l1_l5_questions#show'
+  get 'l1l5new' => 'l1_l5_questions#new'
+ 
  
   get 'level1_lesson1/show'
   get 'level1_lesson1/edit'

@@ -129,7 +129,6 @@ private
                 redirect_to l1l4_url  # see config/routes.rb
              when 5
                 redirect_to l1l5_url  # see config/routes.rb
- 
           end
      end
   end
