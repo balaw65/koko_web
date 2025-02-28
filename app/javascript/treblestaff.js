@@ -2,7 +2,9 @@
   let stateNumber = 0;
   let showPatternInstructions = true;
 
-
+  function initializeStaff()
+  {
+  }
   function playGPentonicMajorScale()
   {
      let instructions = document.getElementById("l1l5instructions");
@@ -380,19 +382,6 @@
  
      stateNumber += 1;
   }
-
-  $('#tempoComboId').change(function() {
-     let tempoSelect           = document.getElementById("tempoComboId");
-     let instructions = document.getElementById("l1l5instructions");
- 
-     instructions.innerHTML = "Tempo changed";
-
-      // ? seconds = 1beat * (60seconds/1minute) * (1minute/value)
-     let v = (60.0 / parseFloat(tempoSelect.value)) * 1000.0;
-     clearInterval(iterateGPentonicMajorScale);
-     iterateGPentonicMajorScale = setInterval(playGPentonicMajorScale, v);
-     showPatternInstructions = false;
-  });
 
 
   $('.button_l1l5').click(function(){
